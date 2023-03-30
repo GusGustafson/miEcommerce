@@ -4,52 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
+    <title>Finalizar compra</title>
 </head>
 <body>
     <header>
         <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
         <h4>Mi tienda de eCommerce</h4>
         <input type="search" name="cuadroBusqueda" placeholder="Buscar producto"/>
-        <a href="#" name="carrito">Carrito</a>
-        <a href="#" name="formaPago">Forma de pago</a>
+        <a href="carrito.html" name="carrito">Carrito</a>
+        <a href="formaDePago.html" name="formaPago">Forma de pago</a>
         <a href="#" name="finalizarPedido">Finalizar pedido</a>
     </header>
     <main>
-        <h2>Mi carrito</h2>
-        <a href="productos.html" name="productos">Seguir comprando</a>
+        <h2>Finalizar compra</h2>
+        <p>Mastercard ...123 seleccionada</p>
+        <button type="submit" name="actualizarTarjeta"></button>
         <div>
             <div>
-                <img src="../assets/images/producto01.png" alt="producto01" name="producto01" width="100px" height="auto"/>
+                <h3>Dirección de envío</h3>
+                <form>
+                    <input type="text" name="nombreCliente" placeholder="Nombre"/>
+                    <input type="text" name="apellidosCliente" placeholder="Apellidos"/>
+                    <input type="number" name="telefonoCliente" placeholder="Teléfono"/>
+                    <input type="email" name="emailCliente" placeholder="Email"/>
+                    <input type="text" name="calleCliente" placeholder="Calle"/>
+                    <input type="number" name="numCalleCliente" placeholder="Número"/>
+                    <input type="text" name="provinciaCliente" placeholder="Provincia"/>
+                    <input type="number" name="codPostalCliente" placeholder="Código postal"/>
+                    <input type="text" name="paisCliente" placeholder="País"/>
+                    <button type="submit" name="anadirDireccionEnvio">Añadir dirección de envío</button>
+                </form>
+            </div>
+            <div>
+                <img src="../assets/icons/envio.png" alt="iconoEnvio" name="envioGratis"  width="50px" height="auto"/>
+                    <div>
+                    <h3>Envío gratis en este pedido</h3>
+                    <h4>Por comprar más de 100€</h4>
+                    </div>
+            </div>
+            <div>
+                <img src="../assets/icons/envio.png" alt="iconoEnvio" name="envioGratis"  width="50px" height="auto"/>
+                    <div>
+                    <h3>4,5 € de descuento en tu siguiente compra</h3>
+                    <h4>Acumula el 1% de tus compras en descuentos</h4>
+                    </div>
+            </div>
+        <div>
+            <h3>Resumen de pedido</h3>
+            <div>
                 <p>Nombre del superproducto 1</p>
                 <p>999,95 €</p>
                 <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
                 <input type="number" min="1" value="1" width="50px"/>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
             </div>
             <div>
-                <img src="../assets/images/producto02.png" alt="producto02" name="producto02" width="100px" height="auto"/>
                 <p>Nombre del superproducto 2</p>
                 <p>999,95 €</p>
                 <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
                 <input type="number" min="1" value="1" width="50px"/>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
             </div>
             <div>
-                <img src="../assets/images/producto03.png" alt="producto03" name="producto03" width="100px" height="auto"/>
                 <p>Nombre del superproducto 3</p>
                 <p>999,95 €</p>
                 <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
                 <input type="number" min="1" value="1" width="50px"/>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
             </div>
-        </div>
-        <div>
-            <h3>Resumen de pedido</h3>
-            <p>Continúa con el proceso de compra para conectar tu Coinbase Wallet o pagar con tu tarjeta.</p>
-            <p>999,95 €</p>
+            <h3>Total</h3>
+            <p>2999,95 €</p>
             <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-            <button type="submit" name="botonPagar">Proceder al pago</button>
+            <button type="submit" name="pagoFinal">Pagar con tarjeta online</button>
         </div>
     </main>
     <section>
@@ -120,4 +143,4 @@
         </div>
     </footer>
 </body>
-</html>    
+</html>

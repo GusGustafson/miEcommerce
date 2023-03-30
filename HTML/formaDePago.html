@@ -4,52 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
+    <title>Forma de pago</title>
 </head>
 <body>
     <header>
         <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
         <h4>Mi tienda de eCommerce</h4>
         <input type="search" name="cuadroBusqueda" placeholder="Buscar producto"/>
-        <a href="#" name="carrito">Carrito</a>
+        <a href="carrito.html" name="carrito">Carrito</a>
         <a href="#" name="formaPago">Forma de pago</a>
         <a href="#" name="finalizarPedido">Finalizar pedido</a>
     </header>
     <main>
-        <h2>Mi carrito</h2>
+        <h2>Forma de pago</h2>
         <a href="productos.html" name="productos">Seguir comprando</a>
         <div>
-            <div>
-                <img src="../assets/images/producto01.png" alt="producto01" name="producto01" width="100px" height="auto"/>
-                <p>Nombre del superproducto 1</p>
-                <p>999,95 €</p>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-                <input type="number" min="1" value="1" width="50px"/>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-            </div>
-            <div>
-                <img src="../assets/images/producto02.png" alt="producto02" name="producto02" width="100px" height="auto"/>
-                <p>Nombre del superproducto 2</p>
-                <p>999,95 €</p>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-                <input type="number" min="1" value="1" width="50px"/>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-            </div>
-            <div>
-                <img src="../assets/images/producto03.png" alt="producto03" name="producto03" width="100px" height="auto"/>
-                <p>Nombre del superproducto 3</p>
-                <p>999,95 €</p>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-                <input type="number" min="1" value="1" width="50px"/>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-            </div>
+            <h3>Mis tarjetas</h3>
+            <form>
+                <ul>
+                    <li>Mastercard ...123</li>
+                    <li>Mastercard ...456</li>
+                    <li>Mastercard ...789</li>
+                </ul>
+                <button type="submit" name="pagarConTarjeta">Pagar con esta tarjeta</button>
+            </form>
         </div>
         <div>
-            <h3>Resumen de pedido</h3>
-            <p>Continúa con el proceso de compra para conectar tu Coinbase Wallet o pagar con tu tarjeta.</p>
-            <p>999,95 €</p>
-            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-            <button type="submit" name="botonPagar">Proceder al pago</button>
+            <h3>Añadir nueva tarjeta</h3>
+            <form>
+                <input type="number" name="numTarjeta" placeholder="Número de tarjeta"/>
+                <input type="text" name="titularTarjeta" placeholder="Titular de la tarjeta"/>
+                <input type="number" name="caducidadTarjeta" placeholder="Caducidad"/>
+                <input type="number" name="codSeguroTarjeta" placeholder="Código seguro"/>
+                <button type="submit" name="anadirTarjeta">Añadir a mis tarjetas</button>
+            </form>
         </div>
     </main>
     <section>
@@ -120,4 +108,4 @@
         </div>
     </footer>
 </body>
-</html>    
+</html>
