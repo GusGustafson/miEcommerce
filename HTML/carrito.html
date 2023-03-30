@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
     <title>Carrito</title>
 </head>
 <body>
@@ -12,7 +13,9 @@
         <h4>Mi tienda de eCommerce</h4>
         <input type="search" name="cuadroBusqueda" placeholder="Buscar producto"/>
         <a href="#" name="carrito">Carrito</a>
+        <img src="../assets/icons/flechita.png" alt="iconoFlechita" width="25px" height="auto"/>
         <a href="#" name="formaPago">Forma de pago</a>
+        <img src="../assets/icons/flechita.png" alt="iconoFlechita" width="25px" height="auto"/>
         <a href="#" name="finalizarPedido">Finalizar pedido</a>
     </header>
     <main>
@@ -49,7 +52,7 @@
             <p>Continúa con el proceso de compra para conectar tu Coinbase Wallet o pagar con tu tarjeta.</p>
             <p>999,95 €</p>
             <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-            <button type="submit" name="botonPagar">Proceder al pago</button>
+            <button type="submit" name="botonPagar"><a href="formaDePago.html">Proceder al pago</a></button>
         </div>
     </main>
     <section>
@@ -89,28 +92,28 @@
             <div>
                 <ul>
                     <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
+                    <li>Servicio al consumidor</li>
+                    <li>Escríbenos</li>
+                    <li>Servicio telefónico</li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
+                    <li><a href="politica.html" name="politica">Política de privacidad</a></li>
+                    <li>Condiciones de compra</li>
+                    <li>Opiniones de clientes</li>
+                    <li>Aviso de privacidad y cookies</li>
                 </ul>
             </div>
         </div>
         <div>
-            <h3>Únete a nuestra newsletter</h3>
+            <h3>Únete a nuestra newsletter y recibe ofertas diarias</h3>
             <form>
-                <input type="email" name="email" placeholder="Escribe tu email"/>
+                <input type="email" name="email" placeholder="Introduce tu email"/>
                 <button type="submit" name="botonSuscribir">Suscribirme</button>
             </form>
             <label for="politica">
-            <input type="checkbox" name="politica" id="politica"/>Acepto la política
+            <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
             </label>
             <h3>Síguenos en redes</h3>
             <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="50px" height="auto"/>

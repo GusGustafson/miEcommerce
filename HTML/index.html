@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
     <title>Mi página de e-commerce</title>
 </head>
 <body>
     <header>
         <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
         <h4>Mi tienda de eCommerce</h4>
-        <input type="search" name="cuadroBusqueda" placeholder="Buscar producto"/>
-        <a href="carrito.html" name="carrito">Carrito<span>1</span></a>
+        <input type="search" name="cuadroBusqueda" placeholder="Buscar productos"/>
+        <button type="submit" name="botonCarrito"><a href="carrito.html" name="carrito">Carrito</a></button><span>1</span>
     </header>
     <nav>
         <ul>
@@ -26,20 +27,20 @@
             <h3>Iniciar sesión</h3>
             <p>Accede a tu cuenta</p>
             <form>
-                <input type="text" name="nombre" placeholder="Escribe tu nombre"/>
-                <input type="password" name="contraseña" placeholder="Escribe tu contraseña"/>
-                <button type="submit" name="botonEnviar">Enviar</button>
+                <input type="email" name="email" placeholder="Email"/>
+                <input type="password" name="contrasena" placeholder="Contraseña"/>
+                <button type="submit" name="botonIniciarSesion"><a href="productos.html" name="productos">Iniciar sesión</a></button>
             </form>
         </div>
         <div>
             <h3>Regístrate</h3>
-            <p>Crea tu cuenta</p>
+            <p>Crea tu cuenta en Mi tienda de eCommerce</p>
             <form>
-                <input type="text" name="nombre" placeholder="Escribe tu nombre"/>
-                <input type="text" name="apellido" placeholder="Escribe tu apellido"/>
-                <input type="email" name="email" placeholder="Escribe tu correo"/>
-                <input type="password" name="contraseña" placeholder="Escribe tu contraseña"/>
-                <button type="submit" name="botonEnviar">Enviar</button>
+                <input type="text" name="nombre" placeholder="Nombre"/>
+                <input type="text" name="apellido" placeholder="Apellidos"/>
+                <input type="email" name="email" placeholder="Email"/>
+                <input type="password" name="contraseña" placeholder="Contraseña"/>
+                <button type="submit" name="botonCrearCuenta"><a href="productos.html" name="productos">Crear cuenta ahora</a></button>
             </form>
         </div>
     </main>
@@ -80,28 +81,28 @@
             <div>
                 <ul>
                     <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
+                    <li>Servicio al consumidor</li>
+                    <li>Escríbenos</li>
+                    <li>Servicio telefónico</li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
+                    <li><a href="politica.html" name="politica">Política de privacidad</a></li>
+                    <li>Condiciones de compra</li>
+                    <li>Opiniones de clientes</li>
+                    <li>Aviso de privacidad y cookies</li>
                 </ul>
             </div>
         </div>
         <div>
-            <h3>Únete a nuestra newsletter</h3>
+            <h3>Únete a nuestra newsletter y recibe ofertas diarias</h3>
             <form>
-                <input type="email" name="email" placeholder="Escribe tu email"/>
+                <input type="email" name="email" placeholder="Introduce tu email"/>
                 <button type="submit" name="botonSuscribir">Suscribirme</button>
             </form>
             <label for="politica">
-            <input type="checkbox" name="politica" id="politica"/>Acepto la política
+            <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
             </label>
             <h3>Síguenos en redes</h3>
             <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="50px" height="auto"/>

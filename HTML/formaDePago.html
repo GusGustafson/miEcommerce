@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
     <title>Forma de pago</title>
 </head>
 <body>
@@ -12,21 +13,21 @@
         <h4>Mi tienda de eCommerce</h4>
         <input type="search" name="cuadroBusqueda" placeholder="Buscar producto"/>
         <a href="carrito.html" name="carrito">Carrito</a>
+        <img src="../assets/icons/flechita.png" alt="iconoFlechita" width="25px" height="auto"/>
         <a href="#" name="formaPago">Forma de pago</a>
+        <img src="../assets/icons/flechita.png" alt="iconoFlechita" width="25px" height="auto"/>
         <a href="#" name="finalizarPedido">Finalizar pedido</a>
     </header>
     <main>
         <h2>Forma de pago</h2>
-        <a href="productos.html" name="productos">Seguir comprando</a>
+        <button type="submit" name="seguirComprando"><a href="productos.html" name="productos">Seguir comprando</a></button>
         <div>
             <h3>Mis tarjetas</h3>
             <form>
-                <ul>
-                    <li>Mastercard ...123</li>
-                    <li>Mastercard ...456</li>
-                    <li>Mastercard ...789</li>
-                </ul>
-                <button type="submit" name="pagarConTarjeta">Pagar con esta tarjeta</button>
+                <input type="radio" name="tarjeta1"/>Mastercard ...123
+                <input type="radio" name="tarjeta1"/>Mastercard ...456
+                <input type="radio" name="tarjeta1"/>Mastercard ...789
+                <button type="submit" name="pagarConTarjeta"><a href="finalizarCompra.html" name="productos">Pagar con esta tarjeta</a></button>
             </form>
         </div>
         <div>
@@ -92,13 +93,13 @@
             </div>
         </div>
         <div>
-            <h3>Únete a nuestra newsletter</h3>
+            <h3>Únete a nuestra newsletter y recibe ofertas diarias</h3>
             <form>
-                <input type="email" name="email" placeholder="Escribe tu email"/>
+                <input type="email" name="email" placeholder="Introduce tu email"/>
                 <button type="submit" name="botonSuscribir">Suscribirme</button>
             </form>
             <label for="politica">
-            <input type="checkbox" name="politica" id="politica"/>Acepto la política
+            <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
             </label>
             <h3>Síguenos en redes</h3>
             <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="50px" height="auto"/>

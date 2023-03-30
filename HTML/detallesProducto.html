@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
     <title>Detalles del producto</title>
 </head>
 <body>
     <header>
         <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
         <h4>Mi tienda de eCommerce</h4>
-        <input type="search" name="cuadroBusqueda" placeholder="Buscar producto"/>
-        <a href="carrito.html" name="carrito">Carrito<span>1</span></a>
+        <input type="search" name="cuadroBusqueda" placeholder="Buscar productos"/>
+        <button type="submit" name="botonCarrito"><a href="carrito.html" name="carrito">Carrito</a></button><span>1</span>
     </header>
     <nav>
         <ul>
@@ -19,6 +20,8 @@
             <li><a href="productos.html" name="productos">Todos los productos</a></li>
             <li><a href="carrito.html" name="carrito">Ir al carrito</a></li>
             <li><a href="detallesProducto.html" name="detallesProducto">Ir al detalle del producto</a></li>
+            <li><a href="" name="misPedidos">Mis pedidos</a></li>
+            <li><a href="index.html" name="indice">Logout</a></li>
         </ul>
     </nav>
     <main>
@@ -30,7 +33,7 @@
             <p>Descripción del producto 2 y tal y tal</p>
             <p><strong>999 €</strong></p>
             <input type="number" min="1" value="1" width="50px"/>
-            <button type="submit" name="enviar">Añadir al carrito</button>
+            <button type="submit" name="enviar"><a href="carrito.html">Añadir al carrito</a></button>
             <br/>
             <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
             <p>Incluye 2 años de garantía</p>
@@ -110,28 +113,28 @@
             <div>
                 <ul>
                     <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
+                    <li>Servicio al consumidor</li>
+                    <li>Escríbenos</li>
+                    <li>Servicio telefónico</li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
-                    <li>Centro de ayuda</li>
+                    <li><a href="politica.html" name="politica">Política de privacidad</a></li>
+                    <li>Condiciones de compra</li>
+                    <li>Opiniones de clientes</li>
+                    <li>Aviso de privacidad y cookies</li>
                 </ul>
             </div>
         </div>
         <div>
-            <h3>Únete a nuestra newsletter</h3>
+            <h3>Únete a nuestra newsletter y recibe ofertas diarias</h3>
             <form>
-                <input type="email" name="email" placeholder="Escribe tu email"/>
+                <input type="email" name="email" placeholder="Introduce tu email"/>
                 <button type="submit" name="botonSuscribir">Suscribirme</button>
             </form>
             <label for="politica">
-            <input type="checkbox" name="politica" id="politica"/>Acepto la política
+            <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
             </label>
             <h3>Síguenos en redes</h3>
             <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="50px" height="auto"/>
