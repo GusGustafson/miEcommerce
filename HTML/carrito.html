@@ -1,97 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <title>Carrito</title>
 </head>
 <body>
     <header>
-        <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-        <h4>Mi tienda de eCommerce</h4>
-        <input type="search" name="cuadroBusqueda" placeholder="Buscar producto"/>
+        <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
+        <h4>My Releevant Store</h4>
         <a href="#" name="carrito">Carrito</a>
-        <img src="../assets/icons/flechita.png" alt="iconoFlechita" width="25px" height="auto"/>
+        <img src="../assets/icons/flechita.png" alt="iconoFlechita" width="25px" height="auto" />
         <a href="#" name="formaPago">Forma de pago</a>
-        <img src="../assets/icons/flechita.png" alt="iconoFlechita" width="25px" height="auto"/>
+        <img src="../assets/icons/flechita.png" alt="iconoFlechita" width="25px" height="auto" />
         <a href="#" name="finalizarPedido">Finalizar pedido</a>
     </header>
     <main>
         <h2>Mi carrito</h2>
         <a href="productos.html" name="productos">Seguir comprando</a>
-        <div>
+        <section>
             <div>
-                <img src="../assets/images/producto01.png" alt="producto01" name="producto01" width="100px" height="auto"/>
-                <p>Nombre del superproducto 1</p>
+                <img src="../assets/images/producto01.png" alt="producto01" name="producto01" width="100px" height="auto" />
+                <h3>Nombre del superproducto 1</h3>
                 <p>999,95 €</p>
                 <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-                <input type="number" min="1" value="1" width="50px"/>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
+                <input type="number" name="cantidad" min="0" max="10" value="1" />
+                <button>Eliminar</button>
             </div>
             <div>
-                <img src="../assets/images/producto02.png" alt="producto02" name="producto02" width="100px" height="auto"/>
-                <p>Nombre del superproducto 2</p>
+                <img src="../assets/images/producto02.png" alt="producto02" name="producto02" width="100px" height="auto" />
+                <h3>Nombre del superproducto 2</h3>
                 <p>999,95 €</p>
                 <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-                <input type="number" min="1" value="1" width="50px"/>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
+                <input type="number" name="cantidad" min="0" max="10" value="1" />
+                <button>Eliminar</button>
             </div>
             <div>
-                <img src="../assets/images/producto03.png" alt="producto03" name="producto03" width="100px" height="auto"/>
-                <p>Nombre del superproducto 3</p>
+                <img src="../assets/images/producto03.png" alt="producto03" name="producto03" width="100px" height="auto" />
+                <h3>Nombre del superproducto 3</h3>
                 <p>999,95 €</p>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-                <input type="number" min="1" value="1" width="50px"/>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
+                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
+                <input type="number" name="cantidad" min="0" max="10" value="1" />
+                <button>Eliminar</button>
             </div>
-        </div>
-        <div>
+        </section>
+        <section>
             <h3>Resumen de pedido</h3>
             <p>Continúa con el proceso de compra para conectar tu Coinbase Wallet o pagar con tu tarjeta.</p>
             <p>999,95 €</p>
-            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-            <button type="submit" name="botonPagar"><a href="formaDePago.html">Proceder al pago</a></button>
-        </div>
+            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
+            <input type="submit" name="botonPagar" value="Proceder al pago" />
+        </section>
     </main>
     <section>
         <div>
-            <img src="../assets/icons/pago.png" alt="iconoPago" name="pagoSeguro"  width="50px" height="auto"/>
+            <img src="../assets/icons/pago.png" alt="iconoPago" name="pagoSeguro"  width="50px" height="auto" />
             <div>
-                <h3>Pago seguro</h3>
-                <h4>100% garantizado</h4>
+                <h5>Pago seguro</h5>
+                <h6>100% garantizado</h6>
             </div>
         </div>
         <div>
-            <img src="../assets/icons/envio.png" alt="iconoEnvio" name="envioGratis"  width="50px" height="auto"/>
+            <img src="../assets/icons/envio.png" alt="iconoEnvio" name="envioGratis"  width="50px" height="auto" />
             <div>
-                <h3>Envío gratis</h3>
-                <h4>En pedidos de +100€</h4>
+                <h5>Envío gratis</h5>
+                <h6>En pedidos de +100€</h6>
             </div>
         </div>
         <div>
-            <img src="../assets/icons/check.png" alt="iconoGarantia" name="dosDeGarantia" width="50px" height="auto"/>
+            <img src="../assets/icons/check.png" alt="iconoGarantia" name="dosDeGarantia" width="50px" height="auto" />
             <div>
-                <h3>2 años de garantía</h3>
-                <h4>En todos los gadgets</h4>
+                <h5>2 años de garantía</h5>
+                <h6>En todos los gadgets</h6>
             </div>
         </div>
         <div>
-            <img src="../assets/icons/ofertas.png" alt="iconoOfertas" name="ofertasUnicas"  width="50px" height="auto"/>
+            <img src="../assets/icons/ofertas.png" alt="iconoOfertas" name="ofertasUnicas"  width="50px" height="auto" />
             <div>
-                <h3>Ofertas únicas</h3>
-                <h4>Precios de mayorista</h4>
+                <h5>Ofertas únicas</h5>
+                <h6>Precios de mayorista</h6>
             </div>
         </div>
     </section>
     <footer>
         <div>
-            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-            <h4>Mi tienda de eCommerce</h4>
+            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
+            <h4>My Releevant Store</h4>
             <div>
-                <ul>
+                <ul class="menu">
                     <li>Centro de ayuda</li>
                     <li>Servicio al consumidor</li>
                     <li>Escríbenos</li>
@@ -99,7 +98,7 @@
                 </ul>
             </div>
             <div>
-                <ul>
+                <ul class="menu">
                     <li><a href="politica.html" name="politica">Política de privacidad</a></li>
                     <li>Condiciones de compra</li>
                     <li>Opiniones de clientes</li>
@@ -108,20 +107,20 @@
             </div>
         </div>
         <div>
-            <h3>Únete a nuestra newsletter y recibe ofertas diarias</h3>
+            <h5>Únete a nuestra newsletter y recibe ofertas diarias</h5>
             <form>
-                <input type="email" name="email" placeholder="Introduce tu email"/>
-                <button type="submit" name="botonSuscribir">Suscribirme</button>
+                <input type="email" name="email" placeholder="Introduce tu email" />
+                <input type="submit" name="botonSuscribir" value="Suscribirme" />
+                <label for="politica">
+                    <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
+                </label>
             </form>
-            <label for="politica">
-            <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
-            </label>
-            <h3>Síguenos en redes</h3>
-            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="50px" height="auto"/>
-            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="50px" height="auto"/>
-            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="50px" height="auto"/>
-            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="50px" height="auto"/>
+            <h5>Síguenos en redes</h5>
+            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="30px" height="auto"/>
+            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="30px" height="auto"/>
+            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="30px" height="auto"/>
+            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="30px" height="auto"/>
         </div>
     </footer>
 </body>
-</html>    
+</html>

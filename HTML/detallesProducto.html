@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <title>Detalles del producto</title>
 </head>
+
 <body>
     <header>
-        <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-        <h4>Mi tienda de eCommerce</h4>
-        <input type="search" name="cuadroBusqueda" placeholder="Buscar productos"/>
-        <button type="submit" name="botonCarrito"><a href="carrito.html" name="carrito">Carrito</a></button><span>1</span>
+        <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
+        <h4>My Releevant Store</h4>
+        <input type="search" name="cuadroBusqueda" placeholder="Buscar productos" />
+        <input type="submit" name="botonCarrito" value="Carrito" /><span>1</span>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html" name="indice">Ir al índice</a></li>
             <li><a href="productos.html" name="productos">Todos los productos</a></li>
-            <li><a href="carrito.html" name="carrito">Ir al carrito</a></li>
-            <li><a href="detallesProducto.html" name="detallesProducto">Ir al detalle del producto</a></li>
-            <li><a href="" name="misPedidos">Mis pedidos</a></li>
-            <li><a href="index.html" name="indice">Logout</a></li>
+            <li><a href="nosotros.html" name="indice">Sobre nosotros</a></li>
+            <li><a href="contacto.html" name="contacto">Contacto</a></li>
+            <li><a href="gadgets.html" name="gadgets">Gadgets</a></li>
+            <li><a href="ofertas.html" name="ofertas">Ofertas</a></li>
+        </ul>
+        <ul>
+            <li><a href="#misPedidos" name="misPedidos">Mis pedidos</a></li>
+            <li><a href="index.html" name="logout">Logout</a></li>
         </ul>
     </nav>
     <main>
         <div>
-            <img src="../assets/images/producto01.png" alt="producto01" name="producto01" width="200px" height="auto"/>
+            <img src="../assets/images/producto01.png" alt="producto01" name="producto01" width="200px" height="auto" />
         </div>
         <div>
             <h2>Producto 2 chulo chulo</h2>
             <p>Descripción del producto 2 y tal y tal</p>
             <p><strong>999 €</strong></p>
-            <input type="number" min="1" value="1" width="50px"/>
-            <button type="submit" name="enviar"><a href="carrito.html">Añadir al carrito</a></button>
-            <br/>
-            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
+            <input type="number" name="cantidad" min="0" max="10" value="1" />
+            <input type="submit" name="enviar" value="Añadir al carrito" />
+            <a href="carrito.html">Añadir al carrito</a>
+            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
             <p>Incluye 2 años de garantía</p>
         </div>
-        <div>
+        <section>
             <div>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-                <h3>Características</h3>
+                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
+                <h4>Características</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae incidunt obcaecati ut non voluptate soluta atque possimus consequatur animi debitis autem, sed alias rem distinctio tenetur at ratione labore tempora.</p>
             </div>
             <div>
                 <h2>Características del producto</h2>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
+                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima obcaecati omnis laboriosam consequatur ipsa suscipit voluptatem, aliquid architecto perferendis dolor dolore commodi ex earum facere eius, enim fugiat magni libero.</p>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
+                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima obcaecati omnis laboriosam consequatur ipsa suscipit voluptatem, aliquid architecto perferendis dolor dolore commodi ex earum facere eius, enim fugiat magni libero.</p>
-                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
+                <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima obcaecati omnis laboriosam consequatur ipsa suscipit voluptatem, aliquid architecto perferendis dolor dolore commodi ex earum facere eius, enim fugiat magni libero.</p>
             </div>
             <div>
@@ -68,51 +72,53 @@
                     <li>Especificación LoQueSea 9</li>
                 </ul>
             </div>
+        </section>
+        <section>
             <div>
-                <h3>Opiniones</h3>
+                <h3>Opiniones destacadas</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, et aspernatur dolor architecto, quo sint quia facilis perspiciatis suscipit mollitia obcaecati reiciendis. Est reiciendis tempore veniam itaque quia non molestias?</p>
-                <p><em>Antonio Pérez</em></p>
+                <cite>Antonio Pérez</cite>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, et aspernatur dolor architecto, quo sint quia facilis perspiciatis suscipit mollitia obcaecati reiciendis. Est reiciendis tempore veniam itaque quia non molestias?</p>
-                <p><em>Antonia Pereza</em></p>
+                <cite>Antonia Pereza</cite>
             </div>
-        </div>
+        </section>
     </main>
     <section>
         <div>
-            <img src="../assets/icons/pago.png" alt="iconoPago" name="pagoSeguro"  width="50px" height="auto"/>
+            <img src="../assets/icons/pago.png" alt="iconoPago" name="pagoSeguro"  width="50px" height="auto" />
             <div>
-                <h3>Pago seguro</h3>
-                <h4>100% garantizado</h4>
+                <h5>Pago seguro</h5>
+                <h6>100% garantizado</h6>
             </div>
         </div>
         <div>
-            <img src="../assets/icons/envio.png" alt="iconoEnvio" name="envioGratis"  width="50px" height="auto"/>
+            <img src="../assets/icons/envio.png" alt="iconoEnvio" name="envioGratis"  width="50px" height="auto" />
             <div>
-                <h3>Envío gratis</h3>
-                <h4>En pedidos de +100€</h4>
+                <h5>Envío gratis</h5>
+                <h6>En pedidos de +100€</h6>
             </div>
         </div>
         <div>
-            <img src="../assets/icons/check.png" alt="iconoGarantia" name="dosDeGarantia" width="50px" height="auto"/>
+            <img src="../assets/icons/check.png" alt="iconoGarantia" name="dosDeGarantia" width="50px" height="auto" />
             <div>
-                <h3>2 años de garantía</h3>
-                <h4>En todos los gadgets</h4>
+                <h5>2 años de garantía</h5>
+                <h6>En todos los gadgets</h6>
             </div>
         </div>
         <div>
-            <img src="../assets/icons/ofertas.png" alt="iconoOfertas" name="ofertasUnicas"  width="50px" height="auto"/>
+            <img src="../assets/icons/ofertas.png" alt="iconoOfertas" name="ofertasUnicas"  width="50px" height="auto" />
             <div>
-                <h3>Ofertas únicas</h3>
-                <h4>Precios de mayorista</h4>
+                <h5>Ofertas únicas</h5>
+                <h6>Precios de mayorista</h6>
             </div>
         </div>
     </section>
     <footer>
         <div>
-            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-            <h4>Mi tienda de eCommerce</h4>
+            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
+            <h4>My Releevant Store</h4>
             <div>
-                <ul>
+                <ul class="menu">
                     <li>Centro de ayuda</li>
                     <li>Servicio al consumidor</li>
                     <li>Escríbenos</li>
@@ -120,7 +126,7 @@
                 </ul>
             </div>
             <div>
-                <ul>
+                <ul class="menu">
                     <li><a href="politica.html" name="politica">Política de privacidad</a></li>
                     <li>Condiciones de compra</li>
                     <li>Opiniones de clientes</li>
@@ -129,19 +135,19 @@
             </div>
         </div>
         <div>
-            <h3>Únete a nuestra newsletter y recibe ofertas diarias</h3>
+            <h5>Únete a nuestra newsletter y recibe ofertas diarias</h5>
             <form>
-                <input type="email" name="email" placeholder="Introduce tu email"/>
-                <button type="submit" name="botonSuscribir">Suscribirme</button>
+                <input type="email" name="email" placeholder="Introduce tu email" />
+                <input type="submit" name="botonSuscribir" value="Suscribirme" />
+                <label for="politica">
+                    <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
+                </label>
             </form>
-            <label for="politica">
-            <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
-            </label>
-            <h3>Síguenos en redes</h3>
-            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="50px" height="auto"/>
-            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="50px" height="auto"/>
-            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="50px" height="auto"/>
-            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="50px" height="auto"/>
+            <h5>Síguenos en redes</h5>
+            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="30px" height="auto"/>
+            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="30px" height="auto"/>
+            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="30px" height="auto"/>
+            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="30px" height="auto"/>
         </div>
     </footer>
 </body>

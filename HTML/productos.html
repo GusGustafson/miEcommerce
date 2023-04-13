@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <title>Productos</title>
 </head>
+
 <body>
     <header>
-        <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-        <h4>Mi tienda de eCommerce</h4>
-        <input type="search" name="cuadroBusqueda" placeholder="Buscar producto"/>
-        <a href="carrito.html" name="carrito">Carrito<span>1</span></a>
+        <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
+        <h4>My Releevant Store</h4>
+        <input type="search" name="cuadroBusqueda" placeholder="Buscar productos" />
+        <input type="submit" name="botonCarrito" value="Carrito" /><span>1</span>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html" name="indice">Ir al índice</a></li>
             <li><a href="productos.html" name="productos">Todos los productos</a></li>
-            <li><a href="carrito.html" name="carrito">Ir al carrito</a></li>
-            <li><a href="detallesProducto.html" name="detallesProducto">Ir al detalle del producto</a></li>
+            <li><a href="nosotros.html" name="indice">Sobre nosotros</a></li>
+            <li><a href="contacto.html" name="contacto">Contacto</a></li>
+            <li><a href="gadgets.html" name="gadgets">Gadgets</a></li>
+            <li><a href="ofertas.html" name="ofertas">Ofertas</a></li>
+        </ul>
+        <ul>
+            <li><a href="#misPedidos" name="misPedidos">Mis pedidos</a></li>
+            <li><a href="index.html" name="logout">Logout</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Gadgets de cocina</h2>
-        <h3>Consigue ahora los mejores productos</h3>
-        <a href="Productos.html" name="Productos">Ver todos</a>
+        <h2>Los mejores gadgets de octubre</h2>
+        <h3>Consigue ahora los mejores productos de My Releevant Store</h3>
+        <input type="submit" name="gadgets" value="Ver ofertas de gadgets" />
+
+        <h4>Gadgets de cocina</h4>
+        <h5>Consigue ahora los mejores productos de My Releevant Store</h5>
+        <input type="submit" name="gadgets" value="Ver todos" />
+
         <div class="card">
-            <img src="../assets/images/producto01.png" alt="producto01" name="producto01" width="200px" height="auto">
-            <h3>El superproducto 01</h3>
-            <h4>999 €</h4>
-            <input type="range">
+            <img src="../assets/images/producto01.png" alt="producto01" name="producto01" width="200px" height="auto" />
+            <h4>Superproducto 01</h4>
+            <h5>999 €</h5>
+            <p class="m-color">★★★★★</p>
             <p>Descripción del producto 01</p>
             <button type="submit" name="addToCart">Añadir al carrito</button>
             <a href="detallesProducto.html" name="verDetalles">Ver</a>
         </div>
         <div class="card">
-            <img src="../assets/images/producto02.png" alt="producto02" name="producto02" width="200px" height="auto">
-            <h3>El superproducto 02</h3>
-            <h4>999 €</h4>
-            <input type="range">
+            <img src="../assets/images/producto02.png" alt="producto02" name="producto02" width="200px" height="auto" />
+            <h4>Superproducto 02</h4>
+            <h5>999 €</h5>
+            <p class="m-color">★★★★★</p>
             <p>Descripción del producto 02</p>
             <button type="submit" name="addToCart">Añadir al carrito</button>
             <a href="detallesProducto.html" name="verDetalles">Ver</a>
         </div>
         <div class="card">
-            <img src="../assets/images/producto03.png" alt="producto03" name="producto03" width="200px" height="auto">
-            <h3>El superproducto 03</h3>
-            <h4>999 €</h4>
-            <input type="range">
+            <img src="../assets/images/producto03.png" alt="producto03" name="producto03" width="200px" height="auto" />
+            <h4>Superproducto 03</h4>
+            <h5>999 €</h5>
+            <p class="m-color">★★★★★</p>
             <p>Descripción del producto 03</p>
             <button type="submit" name="addToCart">Añadir al carrito</button>
             <a href="detallesProducto.html" name="verDetalles">Ver</a>
@@ -57,40 +68,52 @@
     </main>
     <section>
         <div>
-            <img src="../assets/icons/pago.png" alt="iconoPago" name="pagoSeguro"  width="50px" height="auto"/>
+            <h2>Testimonios de clientes</h2>
+            <p>Testimonios de clientes muy interesantes y tal y tal...</p>
+            <input type="submit" name="verTestimonios" value="Ver todos" />
+        </div>
+        <div>
+            <p>Muchos de los que viven merecen morir y algunos de los que mueren merecen la vida.</p>
+            <cite>Gandalf Mithrandir</cite>
+            <p>★★★★★</p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <img src="../assets/icons/pago.png" alt="iconoPago" name="pagoSeguro"  width="50px" height="auto" />
             <div>
-                <h3>Pago seguro</h3>
-                <h4>100% garantizado</h4>
+                <h5>Pago seguro</h5>
+                <h6>100% garantizado</h6>
             </div>
         </div>
         <div>
-            <img src="../assets/icons/envio.png" alt="iconoEnvio" name="envioGratis"  width="50px" height="auto"/>
+            <img src="../assets/icons/envio.png" alt="iconoEnvio" name="envioGratis"  width="50px" height="auto" />
             <div>
-                <h3>Envío gratis</h3>
-                <h4>En pedidos de +100€</h4>
+                <h5>Envío gratis</h5>
+                <h6>En pedidos de +100€</h6>
             </div>
         </div>
         <div>
-            <img src="../assets/icons/check.png" alt="iconoGarantia" name="dosDeGarantia" width="50px" height="auto"/>
+            <img src="../assets/icons/check.png" alt="iconoGarantia" name="dosDeGarantia" width="50px" height="auto" />
             <div>
-                <h3>2 años de garantía</h3>
-                <h4>En todos los gadgets</h4>
+                <h5>2 años de garantía</h5>
+                <h6>En todos los gadgets</h6>
             </div>
         </div>
         <div>
-            <img src="../assets/icons/ofertas.png" alt="iconoOfertas" name="ofertasUnicas"  width="50px" height="auto"/>
+            <img src="../assets/icons/ofertas.png" alt="iconoOfertas" name="ofertasUnicas"  width="50px" height="auto" />
             <div>
-                <h3>Ofertas únicas</h3>
-                <h4>Precios de mayorista</h4>
+                <h5>Ofertas únicas</h5>
+                <h6>Precios de mayorista</h6>
             </div>
         </div>
     </section>
     <footer>
         <div>
-            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto"/>
-            <h4>Mi tienda de eCommerce</h4>
+            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
+            <h4>My Releevant Store</h4>
             <div>
-                <ul>
+                <ul class="menu">
                     <li>Centro de ayuda</li>
                     <li>Servicio al consumidor</li>
                     <li>Escríbenos</li>
@@ -98,7 +121,7 @@
                 </ul>
             </div>
             <div>
-                <ul>
+                <ul class="menu">
                     <li><a href="politica.html" name="politica">Política de privacidad</a></li>
                     <li>Condiciones de compra</li>
                     <li>Opiniones de clientes</li>
@@ -107,19 +130,19 @@
             </div>
         </div>
         <div>
-            <h3>Únete a nuestra newsletter y recibe ofertas diarias</h3>
+            <h5>Únete a nuestra newsletter y recibe ofertas diarias</h5>
             <form>
-                <input type="email" name="email" placeholder="Introduce tu email"/>
-                <button type="submit" name="botonSuscribir">Suscribirme</button>
+                <input type="email" name="email" placeholder="Introduce tu email" />
+                <input type="submit" name="botonSuscribir" value="Suscribirme" />
+                <label for="politica">
+                    <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
+                </label>
             </form>
-            <label for="politica">
-            <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
-            </label>
-            <h3>Síguenos en redes</h3>
-            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="50px" height="auto"/>
-            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="50px" height="auto"/>
-            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="50px" height="auto"/>
-            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="50px" height="auto"/>
+            <h5>Síguenos en redes</h5>
+            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="30px" height="auto"/>
+            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="30px" height="auto"/>
+            <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="30px" height="auto"/>
+            <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="30px" height="auto"/>
         </div>
     </footer>
 </body>
