@@ -1,0 +1,25 @@
+
+
+/* la plantilla general sería:
+
+elemento{
+    propiedad: valor;
+    propiedad: valor
+}
+
+*/
+
+/* lo que sigue son pruebas, que deben borrase y ponerse bien */
+html{
+    color:#222;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:#444;
+}
+
+a,
+.m-color{
+    color:#9d4e31;
+}
+
