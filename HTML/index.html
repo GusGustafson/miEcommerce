@@ -5,25 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <!-- Mi estilo -->
     <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
     <title>My Releevant Store</title>
 </head>
-
 <body>
     <header>
         <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
-        <h4>My Releevant Store</h4>
+        <h4>My <span style="color: blue;">Releevant</span> Store</h4>
         <input type="search" name="cuadroBusqueda" placeholder="Buscar productos" />
-        <a href="carrito.html" name="carrito" id="comprar">Carrito<span>1</span></a>
+        <a href="carrito.html" name="carrito" class="btn" id="comprar">Carrito<span>1</span></a>
     </header>
     <nav>
         <ul>
-            <li><a href="productos.html" name="productos">Todos los productos</a></li>
-            <li><a href="nosotros.html" name="indice">Sobre nosotros</a></li>
-            <li><a href="contacto.html" name="contacto">Contacto</a></li>
-            <li><a href="gadgets.html" name="gadgets">Gadgets</a></li>
-            <li><a href="ofertas.html" name="ofertas">Ofertas</a></li>
+            <li><a href="productos.html" name="productos" class="btn">Todos los productos</a></li>
+            <li><a href="nosotros.html" name="indice" class="btn">Sobre nosotros</a></li>
+            <li><a href="contacto.html" name="contacto" class="btn">Contacto</a></li>
+            <li><a href="gadgets.html" name="gadgets" class="btn">Gadgets</a></li>
+            <li><a href="ofertas.html" name="ofertas" class="btn">Ofertas</a></li>
         </ul>
     </nav>
     <main>
@@ -60,7 +65,7 @@
             <img src="../assets/icons/envio.png" alt="iconoEnvio" name="envioGratis"  width="50px" height="auto" />
             <div>
                 <h5>Envío gratis</h5>
-                <h6>En pedidos de +100€</h6>
+                <h6>En pedidos de +100<i class="bi bi-currency-euro"></i></h6>
             </div>
         </div>
         <div>
@@ -81,7 +86,7 @@
     <footer>
         <div>
             <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
-            <h4>My Releevant Store</h4>
+            <h4>My <span style="color: blue;">Releevant</span> Store</h4>
             <div>
                 <ul class="menu">
                     <li>Centro de ayuda</li>
