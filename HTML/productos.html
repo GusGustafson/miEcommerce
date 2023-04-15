@@ -16,26 +16,30 @@
     <title>Productos</title>
 </head>
 <body>
-    <header>
+    <header class="container">
         <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
         <h4>My <span style="color: blue;">Releevant</span> Store</h4>
         <input type="search" name="cuadroBusqueda" placeholder="Buscar productos" />
         <a href="carrito.html" name="carrito" class="btn" id="comprar">Carrito<span>1</span></a>
     </header>
-    <nav>
-        <ul>
-            <li><a href="productos.html" name="productos" class="btn">Todos los productos</a></li>
-            <li><a href="nosotros.html" name="indice" class="btn">Sobre nosotros</a></li>
-            <li><a href="contacto.html" name="contacto" class="btn">Contacto</a></li>
-            <li><a href="gadgets.html" name="gadgets" class="btn">Gadgets</a></li>
-            <li><a href="ofertas.html" name="ofertas" class="btn">Ofertas</a></li>
-        </ul>
-        <ul>
-            <li><a href="#misPedidos" name="misPedidos" class="btn">Mis pedidos</a></li>
-            <li><a href="index.html" name="logout" class="btn">Logout</a></li>
-        </ul>
+    <nav class="container" id="navegacion">
+        <div class="col-izq">
+            <ul class="menu">
+                <li><a href="productos.html" name="productos" class="btn">Todos los productos</a></li>
+                <li><a href="nosotros.html" name="indice" class="btn">Sobre nosotros</a></li>
+                <li><a href="contacto.html" name="contacto" class="btn">Contacto</a></li>
+                <li><a href="gadgets.html" name="gadgets" class="btn">Gadgets</a></li>
+                <li><a href="ofertas.html" name="ofertas" class="btn">Ofertas</a></li>
+            </ul>
+        </div>
+        <div class="col-der">
+            <ul class="menu">
+                <li><a href="#misPedidos" name="misPedidos" class="btn">Mis pedidos</a></li>
+                <li><a href="index.html" name="logout" class="btn">Logout</a></li>
+            </ul>
+        </div>
     </nav>
-    <main>
+    <main class="container">
         <h2>Los mejores gadgets de octubre</h2>
         <h3>Consigue ahora los mejores productos de My Releevant Store</h3>
         <a href="gadgets.html" name="gadgets" class="btn">Ver ofertas de gadgets</a>
@@ -46,57 +50,63 @@
 
         <div class="card">
             <img src="../assets/images/producto01.png" alt="producto01" name="producto01" width="200px" height="auto" />
-            <h4>Superproducto 01</h4>
-            <p><b>999</b><i class="bi bi-currency-euro"></i></p>
-            <div class="rating">
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+            <div class="info">
+                <h4>Superproducto 01</h4>
+                <p><b>999</b><i class="bi bi-currency-euro"></i></p>
+                <div class="rating">
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <p>Descripción del producto 01</p>
+                <button type="submit" name="addToCart">Añadir al carrito</button>
+                <a href="detallesProducto.html" name="verDetalles" class="btn">Ver</a>
             </div>
-            <p>Descripción del producto 01</p>
-            <button type="submit" name="addToCart">Añadir al carrito</button>
-            <a href="detallesProducto.html" name="verDetalles" class="btn">Ver</a>
         </div>
         <div class="card">
             <img src="../assets/images/producto02.png" alt="producto02" name="producto02" width="200px" height="auto" />
-            <h4>Superproducto 02</h4>
-            <p><b>999</b><i class="bi bi-currency-euro"></i></p>
-            <div class="rating">
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+            <div class="info">
+                <h4>Superproducto 02</h4>
+                <p><b>999</b><i class="bi bi-currency-euro"></i></p>
+                <div class="rating">
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <p>Descripción del producto 02</p>
+                <button type="submit" name="addToCart">Añadir al carrito</button>
+                <a href="detallesProducto.html" name="verDetalles" class="btn">Ver</a>
             </div>
-            <p>Descripción del producto 02</p>
-            <button type="submit" name="addToCart">Añadir al carrito</button>
-            <a href="detallesProducto.html" name="verDetalles" class="btn">Ver</a>
         </div>
         <div class="card">
             <img src="../assets/images/producto03.png" alt="producto03" name="producto03" width="200px" height="auto" />
-            <h4>Superproducto 03</h4>
-            <p><b>999</b><i class="bi bi-currency-euro"></i></p>
-            <div class="rating">
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+            <div class="info">
+                <h4>Superproducto 03</h4>
+                <p><b>999</b><i class="bi bi-currency-euro"></i></p>
+                <div class="rating">
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <p>Descripción del producto 03</p>
+                <button type="submit" name="addToCart">Añadir al carrito</button>
+                <a href="detallesProducto.html" name="verDetalles" class="btn">Ver</a>
             </div>
-            <p>Descripción del producto 03</p>
-            <button type="submit" name="addToCart">Añadir al carrito</button>
-            <a href="detallesProducto.html" name="verDetalles" class="btn">Ver</a>
         </div>
     </main>
-    <section>
+    <section class="container">
         <div>
             <h2>Testimonios de clientes</h2>
             <p>Testimonios de clientes muy interesantes y tal y tal...</p>
             <a href="#" name="verTestimonios" class="btn">Ver todos</a>
         </div>
-        <div>
+        <div class="box">
             <p>Muchos de los que viven merecen morir y algunos de los que mueren merecen la vida.</p>
             <cite>Gandalf Mithrandir</cite>
             <div>
@@ -108,7 +118,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="container">
         <div>
             <img src="../assets/icons/pago.png" alt="iconoPago" name="pagoSeguro"  width="50px" height="auto" />
             <div>
@@ -138,7 +148,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="container">
         <div>
             <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
             <h4>My <span style="color: blue;">Releevant</span> Store</h4>
