@@ -16,22 +16,24 @@
     <title>My Releevant Store</title>
 </head>
 <body>
-    <header>
+    <header class="container">
         <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
         <h4>My <span style="color: blue;">Releevant</span> Store</h4>
         <input type="search" name="cuadroBusqueda" placeholder="Buscar productos" />
         <a href="carrito.html" name="carrito" class="btn" id="comprar">Carrito<span>1</span></a>
     </header>
-    <nav>
-        <ul>
-            <li><a href="productos.html" name="productos" class="btn">Todos los productos</a></li>
-            <li><a href="nosotros.html" name="indice" class="btn">Sobre nosotros</a></li>
-            <li><a href="contacto.html" name="contacto" class="btn">Contacto</a></li>
-            <li><a href="gadgets.html" name="gadgets" class="btn">Gadgets</a></li>
-            <li><a href="ofertas.html" name="ofertas" class="btn">Ofertas</a></li>
-        </ul>
+    <nav class="container" id="navegacion">
+        <div class="col-izq">
+            <ul class="menu">
+                <li><a href="productos.html" name="productos" class="btn">Todos los productos</a></li>
+                <li><a href="nosotros.html" name="indice" class="btn">Sobre nosotros</a></li>
+                <li><a href="contacto.html" name="contacto" class="btn">Contacto</a></li>
+                <li><a href="gadgets.html" name="gadgets" class="btn">Gadgets</a></li>
+                <li><a href="ofertas.html" name="ofertas" class="btn">Ofertas</a></li>
+            </ul>
+        </div>
     </nav>
-    <main>
+    <main class="container">
         <div>
             <h3>Iniciar sesión</h3>
             <p>Accede con tus datos anteriores</p>
@@ -53,7 +55,7 @@
             </form>
         </div>
     </main>
-    <section>
+    <section class="container">
         <div>
             <img src="../assets/icons/pago.png" alt="iconoPago" name="pagoSeguro"  width="50px" height="auto" />
             <div>
@@ -83,7 +85,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="container">
         <div>
             <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" height="auto" />
             <h4>My <span style="color: blue;">Releevant</span> Store</h4>
@@ -105,7 +107,7 @@
             </div>
         </div>
         <div>
-            <h5>Únete a nuestra newsletter y recibe ofertas diarias</h5>
+            <h4>Únete a nuestra newsletter y recibe ofertas diarias</h4>
             <form>
                 <input type="email" name="email" placeholder="Introduce tu email" />
                 <input type="submit" name="botonSuscribir" value="Suscribirme" />
@@ -113,7 +115,8 @@
                     <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
                 </label>
             </form>
-            <h5>Síguenos en redes</h5>
+            <hr />
+            <h4>Síguenos en redes</h4>
             <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="30px" height="auto"/>
             <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="30px" height="auto"/>
             <img src="../assets/icons/facebook.png" alt="iconoFacebook" width="30px" height="auto"/>

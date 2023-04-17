@@ -67,6 +67,13 @@ ul.menu{
     display: inline-block;
 }
 
+/* Ahora hay que poner el width al 49% para que ambas columnas de ul se repartan el ancho de pantalla a partes iguales
+(no ponemos 50% porque hay alguna parte adicional, padding o algo así, que ocupa algo de espacio y se descuadra).
+Antes hay que ajustar la pantalla a "wrap" (ver abajo, en la sección HELPERS, la definición de ".container", que se
+deberá asignar a todas las secciones del HTML, o sea, al header, al nav, al main, al section y al footer).
+Y para pegar la ul derecha a la derecha hay que usar "text-align:right" (funciona porque li se comporta como una letra
+al ser "display:inline-block") */
+
 #navegacion .col-izq,
 #navegacion .col-der{
     width: 49%;
@@ -83,8 +90,13 @@ ul.menu{
     color: #cacaca;
 }
 
+/* Aquí, para ".card", le pongo width y display para dividir el espacio entre 3 y que así salgan las tres tarjetas
+una al lado de la otra. En teoría, esto es solo para el último ejercicio de "P5 Tema 6.pptx" y luego debe borrarse. */
+
 .card{
     padding: 16px;
+    width: 29%;
+    display: inline-block;
 }
 
 .box{
@@ -101,9 +113,9 @@ ul.menu{
 
 .info h4,
 .info p,
-.info .btn,
 .info .rating,
-.info button{
+.info button,
+.info .btn{
     margin-bottom: 16px;
 }
 
