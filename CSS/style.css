@@ -1,6 +1,6 @@
 body{
     color:#222;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Outfit', sans-serif;
     font-size: 16px;
     margin: 0;
 }
@@ -92,12 +92,13 @@ al ser "display:inline-block") */
 
 /* Aquí, para ".card", le pongo width y display para dividir el espacio entre 3 y que así salgan las tres tarjetas
 una al lado de la otra. En teoría, esto es solo para el último ejercicio de "P5 Tema 6.pptx" y luego debe borrarse. */
-
-.card{
+/* CONSEGUIDO: Procedo a comentarlo para dejarlo como estaba antes de aplicarle FLEX. */
+/*.card{
     padding: 16px;
     width: 29%;
     display: inline-block;
 }
+*/
 
 .box{
     border: 2px solid #0caaf2;
