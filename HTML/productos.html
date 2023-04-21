@@ -19,10 +19,17 @@
 <body>
     <header>
         <div class="container franja-superior">
-            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" />
-            <h4>My <span style="color: var(--principal);">Releevant</span> Store</h4>
-            <input type="search" name="cuadroBusqueda" placeholder="Buscar productos" />
-            <a href="carrito.html" name="carrito" class="button button-resalto" id="comprar">Carrito<span>1</span></a>
+            <a href="index.html" class="logo">
+                <img src="../assets/icons/cuadradito.png" alt="cuadradito" />
+                <h4>My <span class="main-color">Releevant</span> Store</h4>
+            </a>
+            <div class="buscador-header">
+                <input type="search" name="cuadroBusqueda" placeholder="Buscar productos..." />
+                <button class="button button-secundario"><i class="bi bi-search"></i></button>
+            </div>
+            <a href="carrito.html" name="carrito" class="button button-resalto" id="comprar">
+                Carrito<span>1</span>
+            </a>
         </div>
     </header>
 
@@ -44,11 +51,16 @@
         </div>
     </nav>
 
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Los mejores gadgets de octubre</h1>
+            <p>Consigue ahora los mejores productos de My Releevant Store</p>
+            <a href="gadgets.html" name="gadgets" class="button">Ver ofertas de gadgets</a>
+        </div>
+    </div>
+
     <main class="container">
-        <h2>Los mejores gadgets de octubre</h2>
-        <h5>Consigue ahora los mejores productos de My Releevant Store</h5>
-        <a href="gadgets.html" name="gadgets" class="button">Ver ofertas de gadgets</a>
-        <h3>Gadgets de cocina</h3>
+        <h2>Gadgets de cocina</h2>
         <p>Consigue ahora los mejores productos de My Releevant Store</p>
         <a href="gadgets.html" name="gadgets" class="button button-secundario">Ver todos</a>
         <hr />
@@ -127,12 +139,12 @@
                 </div>
             </div> <!-- FIN DEL DIV DE LA TARJETA -->
         </div> <!-- FIN DEL DIV DE LA FRANJA DE TARJETAS -->
-</main>
+    </main>
 
     <section class="container testimonios">
         <div>
             <h3>Testimonios de clientes</h3>
-            <p>Testimonios de clientes muy interesantes y tal y tal... Testimonios de clientes muy interesantes y tal y tal... Testimonios de clientes muy interesantes y tal y tal...</p>
+            <p>Testimonios de clientes muy interesantes y tal y tal. Y seguimos aún con testimonios de clientes muy interesantes y tal y tal. Y seguimos aún con testimonios de clientes muy interesantes y tal y tal...</p>
             <a href="#" name="verTestimonios" class="button button-secundario">Ver todos</a>
         </div>
         <div class="box">
@@ -147,6 +159,9 @@
             </div>
         </div>
     </section>
+
+    <hr />
+
     <section class="container benefits">
         <div>
             <img src="../assets/icons/pago.png" alt="iconoPago" name="pagoSeguro"  width="50px" />
@@ -177,6 +192,7 @@
             </div>
         </div>
     </section>
+
     <footer class="container" id="pieDePagina">
         <div>
             <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" />

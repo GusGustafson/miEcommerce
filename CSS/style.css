@@ -27,6 +27,18 @@ body{
     margin: 0;
     font-size: 16px;
 }
+/* Las 2 líneas siguientes son lo que convierte una página a DARK MODE */
+
+body.dark{
+    --negro: hsl(var(--hue) 21% 98% / 1);
+    --blanco: hsl(var(--hue) 21% 20% / 1);
+}
+
+/* Esta línea es necesaria para evitar que las imágenes creen márgenes alrededor de ellas. */
+
+img{
+    max-width: 100%;
+}
 
 /* Tipografía */
 
@@ -77,23 +89,35 @@ a{
     background: var(--principal);
     text-align: center;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover{
+    background-color: transparent;
+    color: var(--principal);
 }
 
 .button-secundario{
-    color: var(--negro);
-    background-color: var(--secundario);
+    background: var(--secundario);
     border-color: var(--secundario);
 }
 
 .button-resalto{
-    color: var(--blanco);
-    background-color: var(--resalto);
+    background: var(--resalto);
     border-color: var(--secundario);
 }
 
+.button-resalto:hover{
+    color: var(--resalto);
+}
+
+/* Input */
+/* Aquí hay que meter la parte correspondiente a los formularios del archivo index.html*/
+
+
 /* Menú */
 
-ul.menu{
+.menu{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -103,28 +127,12 @@ ul.menu{
     display: inline-block;
 }
 
-.franja-superior{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-}
-
 /* Ahora hay que poner el width al 49% para que ambas columnas de ul se repartan el ancho de pantalla a partes iguales
 (no ponemos 50% porque hay alguna parte adicional, padding o algo así, que ocupa algo de espacio y se descuadra).
 Antes hay que ajustar la pantalla a "wrap" (ver abajo, en la sección HELPERS, la definición de ".container", que se
 deberá asignar a todas las secciones del HTML, o sea, al header, al nav, al main, al section y al footer).
 Y para pegar la ul derecha a la derecha hay que usar "text-align:right" (funciona porque li se comporta como una letra
 al ser "display:inline-block") */
-
-#navegacion .col-izq,
-#navegacion .col-der{
-    width: 49%;
-    display: inline-block;
-}
-
-#navegacion .col-der .menu{
-    text-align: right;
-}
 
 /* Tarjetas */
 
@@ -177,7 +185,59 @@ una al lado de la otra. En teoría, esto es solo para el último ejercicio de "P
 }
 */
 
+/* Caja */
+/* Aquí hay que meter la parte correspondiente a las cajas*/
+
+.box{
+    border: 2px solid var(--gris);
+}
+
+.bi{
+    margin-right: 8px;
+}
+
 /* Header */
+
+header{
+    background-color: var(--principal);
+}
+
+header .main-color{
+    color: var(--blanco);
+}
+
+header .container{
+    padding: 16px;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    }
+
+.logo{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    max-width: inherit;
+}
+
+.logo h4{
+    margin: 0;
+}
+
+.buscador-header{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+.buscador-header input{
+    width: 100%;
+}
 
 #comprar{
     position: relative;
@@ -185,16 +245,27 @@ una al lado de la otra. En teoría, esto es solo para el último ejercicio de "P
 
 #comprar span{
     position: absolute;
-    top: -12px;
-    right: -12px;
+    top: -8px;
+    right: -8px;
     width: 24px;
     height: 24px;
     background: var(--negro);
-    background-color: var(--principal);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Nav */
+
+#navegacion{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+#navegacion .col-der .menu{
+    text-align: right;
 }
 
 /* Footer */
@@ -208,21 +279,30 @@ una al lado de la otra. En teoría, esto es solo para el último ejercicio de "P
     color: var(--blanco);
 }
 
-/* La sección que viene ahora es mía, no está en el CSS de Rafa. Corresponde a todas las cajas de mi web */
-
-.box{
-    border: 2px solid var(--principal);
-}
-
-.bi{
-    margin-right: 8px;
-}
-
 /* Página productos */
+
+.jumbotron{
+    padding:160px 0;
+    background-image: url("../assets/images/jumbotron.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+
+.jumbotron h1{
+    color: var(--blanco);
+}
 
 .franja-tarjetas{
     display: flex;
     gap: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .franja-tarjetas{
+        flex-direction: column;
+    }
 }
 
 .testimonios{
@@ -236,10 +316,13 @@ una al lado de la otra. En teoría, esto es solo para el último ejercicio de "P
     text-align: center;
 }
 
+/* Aquí hay que meter la parte de la página LOGIN */
+
 /* Helpers */
 
 .container{
     max-width: 992px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
