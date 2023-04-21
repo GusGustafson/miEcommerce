@@ -5,11 +5,17 @@ Con esto podremos asignar los colores llamándolos por sus variables (como "hue"
     --hue: 199;
     --principal: hsl(var(--hue) 91% 50% / 1);
     --secundario: hsl(var(--hue) 71% 85% / 1);
-    --resalto: hsl(var(--hue - 180) 91% 50% /1);
+    --resalto: hsl(19 91% 50% /1);
     --negro: hsl(var(--hue) 21% 20% / 1);
     --blanco: hsl(var(--hue) 21% 98% / 1);
     --gris: hsl(var(--hue) 21% 80% / 1);
     --footer: hsl(224 54% 17% / 1);
+}
+
+/* Esto que viene es SUPERIMPORTANTE. Hay que ponerlo siempre en el CSS. */
+
+* {
+    box-sizing: border-box;
 }
 
 /* Aquí va toda la sección del BODY, o sea, lo que sea aplica a toda la página HTML. */
@@ -79,6 +85,12 @@ a{
     border-color: var(--secundario);
 }
 
+.button-resalto{
+    color: var(--blanco);
+    background-color: var(--resalto);
+    border-color: var(--secundario);
+}
+
 /* Menú */
 
 ul.menu{
@@ -93,8 +105,8 @@ ul.menu{
 
 .franja-superior{
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: space-between; 
+    align-items: center;
 }
 
 /* Ahora hay que poner el width al 49% para que ambas columnas de ul se repartan el ancho de pantalla a partes iguales
@@ -215,11 +227,11 @@ una al lado de la otra. En teoría, esto es solo para el último ejercicio de "P
 
 .testimonios{
     display: flex;
+    max-width: 100%;
     gap: 16px;
 }
 .testimonios .box{
     border-radius: 16px;
-    max-width: 70%;
     padding-top: 16px;
     text-align: center;
 }
