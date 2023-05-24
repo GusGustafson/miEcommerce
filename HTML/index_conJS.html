@@ -13,15 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-    <title>Productos</title>
+    <title>My Releevant Store</title>
 </head>
 
 <body onload="inicializar()">
     <header>
         <div class="container franja-superior">
             <a href="index.html" class="logo">
-                <img src="../assets/icons/cuadradito.png" alt="cuadradito" />
-                <h4>My <span class="main-color">Releevant</span> Store</h4>
+                <img src="../assets/icons/logo.png" alt="logo" />
+                <h4>My<span class="main-color">Releevant</span>Store</h4>
             </a>
             <div class="buscador-header">
                 <input type="search" name="cuadroBusqueda" placeholder="Buscar productos..." />
@@ -43,56 +43,40 @@
                 <li><a href="ofertas.html" name="ofertas">Ofertas</a></li>
             </ul>
         </div>
-        <div class="col-der">
-            <ul class="menu">
-                <li><a href="#misPedidos" name="misPedidos">Mis pedidos</a></li>
-                <li><a href="index.html" name="logout">Logout</a></li>
-            </ul>
-        </div>
     </nav>
 
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Los mejores gadgets de octubre</h1>
-            <p>Consigue ahora los mejores productos de My Releevant Store</p>
-            <a href="gadgets.html" name="gadgets" class="button">Ver ofertas de gadgets</a>
+    <main class="container login">
+        <div class="caja destacado" id="cajaDestacado">
+            <h3>Iniciar sesión</h3>
+            <p>Accede con tus datos anteriores</p>
+            <form>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Ejemplo: augusto@gmail.com" />
+                    <div class="error">Introduce una dirección correcta.</div>
+                </div>
+                <div class="input-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" name="contrasena" placeholder="Contraseña" />
+                    <div class="error">Introduce una contraseña correcta.</div>
+                </div>
+                <input type="submit" value="Iniciar sesión" class="button button-resalto"/>
+            </form>
         </div>
-    </div>
-
-    <main class="container">
-        <h2>Gadgets de cocina</h2>
-        <p>Consigue ahora los mejores productos de My Releevant Store</p>
-        <a href="gadgets.html" name="gadgets" class="button button-secundario">Ver todos</a>
-        <hr />
-
-        <div class="franja-tarjetas">
-            <div class="card" id="miTarjeta">
-            </div> <!-- FIN DEL DIV DE LA TARJETA -->
-        </div> <!-- FIN DEL DIV DE LA FRANJA DE TARJETAS -->
+        <div class="caja" id="caja">
+            <h3>Regístrate</h3>
+            <p>Crea una cuenta en My Releevant Store para conseguir tu primer descuento como cliente</p>
+            <form>
+                <input type="text" name="nombre" placeholder="Nombre" />
+                <input type="text" name="apellido" placeholder="Apellidos" />
+                <input type="email" name="email" placeholder="Email" />
+                <input type="password" name="contraseña" placeholder="Contraseña" />
+                <input type="submit" value="Crear cuenta ahora" class="button" />
+            </form>
+        </div>
     </main>
 
-    <section class="container testimonios">
-        <div>
-            <h3>Testimonios de clientes</h3>
-            <p>Testimonios de clientes muy interesantes y tal y tal. Y seguimos aún con testimonios de clientes muy interesantes y tal y tal. Y seguimos aún con testimonios de clientes muy interesantes y tal y tal...</p>
-            <a href="#" name="verTestimonios" class="button button-secundario">Ver todos</a>
-        </div>
-        <div class="box">
-            <p>Muchos de los que viven merecen morir y algunos de los que mueren merecen la vida. Muchos de los que viven merecen morir y algunos de los que mueren merecen la vida.</p>
-            <cite>Gandalf Mithrandir</cite>
-            <div class="rating">
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill main-color"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-            </div>
-        </div>
-    </section>
-
-    <hr />
-
-    <section class="container benefits">
+    <section class="container">
         <div>
             <img src="../assets/icons/pago.png" alt="iconoPago" name="pagoSeguro"  width="50px" />
             <div>
@@ -122,11 +106,10 @@
             </div>
         </div>
     </section>
-
-    <footer class="container" id="pieDePagina">
+    <footer class="container">
         <div>
-            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" />
-            <h4>My <span style="color: var(--principal);">Releevant</span> Store</h4>
+            <img src="../assets/icons/logo.png" alt="logo" width="50px" />
+            <h4>My <span style="color: blue;">Releevant</span> Store</h4>
             <div>
                 <ul class="menu">
                     <li>Centro de ayuda</li>
@@ -148,7 +131,7 @@
             <h4>Únete a nuestra newsletter y recibe ofertas diarias</h4>
             <form>
                 <input type="email" name="email" placeholder="Introduce tu email" />
-                <input type="submit" class="button" name="botonSuscribir" value="Suscribirme" />
+                <input type="submit" name="botonSuscribir" value="Suscribirme" />
                 <label for="politica">
                     <input type="checkbox" name="politica" id="politica"/>Acepto la <a href="politica.html" name="politica">política de privacidad</a> de esta web
                 </label>
@@ -161,6 +144,6 @@
             <img src="../assets/icons/instagram.png" alt="iconoInstagram" width="30px" />
         </div>
     </footer>
-    <script src="productos_conJS.js"></script>
+    <script src="index_conJS.js"></script>
 </body>
 </html>
