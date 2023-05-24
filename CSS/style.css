@@ -5,11 +5,10 @@ Con esto podremos asignar los colores llamándolos por sus variables (como "hue"
     --hue: 199;
     --principal: hsl(var(--hue) 91% 50% / 1);
     --secundario: hsl(var(--hue) 71% 85% / 1);
-    --resalto: hsl(19 91% 50% /1);
+    --resalto: hsl( calc( var(--hue) - 180 ) 91% 50% / 1);
     --negro: hsl(var(--hue) 21% 20% / 1);
     --blanco: hsl(var(--hue) 21% 98% / 1);
     --gris: hsl(var(--hue) 21% 80% / 1);
-    --footer: hsl(224 54% 17% / 1);
 }
 
 /* Esto que viene es SUPERIMPORTANTE. Hay que ponerlo siempre en el CSS. */
@@ -79,7 +78,6 @@ a{
 .button{
     display: inline-block;
     text-decoration: none;
-    font-weight: bold;
     padding: 16px 24px;
     border: 2px solid var(--principal);
     border-radius: 8px;
@@ -104,7 +102,7 @@ a{
 
 .button-resalto{
     background: var(--resalto);
-    border-color: var(--secundario);
+    border-color: var(--resalto);
 }
 
 .button-resalto:hover{
@@ -112,8 +110,48 @@ a{
 }
 
 /* Input */
-/* Aquí hay que meter la parte correspondiente a los formularios del archivo index.html*/
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input{
+    padding: 16px 24px;
+    border: 2px solid var(--gris);
+    outline: var(--gris);
+    border-radius: 8px;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+}
+
+input:focus{
+    border-color: var(--principal)
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group .error{ 
+    display: none; 
+    color: var(--error);
+}
+
+.input-group.has-error label{
+    color: var(--error);
+}
+
+.input-group.has-error input{
+    border-color: var(--error);
+}
+
+.input-group.has-error .error{
+    display: block;
+}
 
 /* Menú */
 
@@ -186,12 +224,22 @@ una al lado de la otra. En teoría, esto es solo para el último ejercicio de "P
 */
 
 /* Caja */
-/* Aquí hay que meter la parte correspondiente a las cajas*/
 
-.box{
+.caja{
+    padding: 40px;
     border: 2px solid var(--gris);
+    border-radius: 32px;
 }
 
+.caja h3{
+    margin: 0;
+}
+
+.caja.destacado{
+    border-color: var(--principal);
+}
+
+/* Este próximo elemento es mío. Hay que comprobar si es necesario. */
 .bi{
     margin-right: 8px;
 }
@@ -272,14 +320,14 @@ header .container{
 
 #pieDePagina {
     color: var(--blanco);
-    background-color: var(--footer);
+    background-color: var(--negro);
 }
 
 #pieDePagina h4{
     color: var(--blanco);
 }
 
-/* Página productos */
+/* Página Productos */
 
 .jumbotron{
     padding:160px 0;
@@ -316,7 +364,22 @@ header .container{
     text-align: center;
 }
 
-/* Aquí hay que meter la parte de la página LOGIN */
+/* Página Login */
+
+main.login{
+    display: flex;
+    gap: 24px;
+}
+
+main.login .caja{
+    width: 100%;
+}
+
+@media only screen and (max-width:768px){
+    main.login{
+        flex-direction: column;
+    }
+}
 
 /* Helpers */
 

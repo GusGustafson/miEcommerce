@@ -18,11 +18,18 @@
 
 <body>
     <header>
-        <div class="container">
-            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" />
-            <h4>My <span style="color: var(--principal);">Releevant</span> Store</h4>
-            <input type="search" name="cuadroBusqueda" placeholder="Buscar productos" />
-            <a href="carrito.html" name="carrito" class="button" id="comprar">Carrito<span>1</span></a>
+        <div class="container franja-superior">
+            <a href="index.html" class="logo">
+                <img src="../assets/icons/logo.png" alt="logo" />
+                <h4>My<span class="main-color">Releevant</span>Store</h4>
+            </a>
+            <div class="buscador-header">
+                <input type="search" name="cuadroBusqueda" placeholder="Buscar productos..." />
+                <button class="button button-secundario"><i class="bi bi-search"></i></button>
+            </div>
+            <a href="carrito.html" name="carrito" class="button button-resalto" id="comprar">
+                Carrito<span>1</span>
+            </a>
         </div>
     </header>
 
@@ -38,17 +45,25 @@
         </div>
     </nav>
 
-    <main class="container">
-        <div>
+    <main class="container login">
+        <div class="caja destacado">
             <h3>Iniciar sesión</h3>
             <p>Accede con tus datos anteriores</p>
             <form>
-                <input type="email" name="email" placeholder="Email" />
-                <input type="password" name="contrasena" placeholder="Contraseña" />
-                <input type="submit" name="botonIniciarSesion" value="Iniciar sesión" />
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Ejemplo: augusto@gmail.com" />
+                    <div class="error">Introduce una dirección correcta.</div>
+                </div>
+                <div class="input-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" name="contrasena" placeholder="Contraseña" />
+                    <div class="error">Introduce una contraseña correcta.</div>
+                </div>
+                <input type="submit" value="Iniciar sesión" class="button button-resalto"/>
             </form>
         </div>
-        <div class="box">
+        <div class="caja">
             <h3>Regístrate</h3>
             <p>Crea una cuenta en My Releevant Store para conseguir tu primer descuento como cliente</p>
             <form>
@@ -56,10 +71,11 @@
                 <input type="text" name="apellido" placeholder="Apellidos" />
                 <input type="email" name="email" placeholder="Email" />
                 <input type="password" name="contraseña" placeholder="Contraseña" />
-                <input type="submit" name="botonCrearCuenta" value="Crear cuenta ahora" />
+                <input type="submit" value="Crear cuenta ahora" class="button" />
             </form>
         </div>
     </main>
+
     <section class="container">
         <div>
             <img src="../assets/icons/pago.png" alt="iconoPago" name="pagoSeguro"  width="50px" />
@@ -92,7 +108,7 @@
     </section>
     <footer class="container">
         <div>
-            <img src="../assets/icons/cuadradito.png" alt="iconoCuadradito" width="50px" />
+            <img src="../assets/icons/logo.png" alt="logo" width="50px" />
             <h4>My <span style="color: blue;">Releevant</span> Store</h4>
             <div>
                 <ul class="menu">
